@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             }
         });
         vList=findViewById(R.id.recyclerView);
-        mAdapter=new TransazioniCursorAdapter(getBaseContext(),null);
+        mAdapter=new TransazioniCursorAdapter(this,null);
         vList.setAdapter(mAdapter);
         getLoaderManager().initLoader(0,null,this);
 
