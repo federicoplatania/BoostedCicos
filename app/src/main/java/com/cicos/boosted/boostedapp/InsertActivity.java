@@ -32,8 +32,8 @@ public class InsertActivity extends AppCompatActivity {
 
         if (bundle != null) {
             mID = bundle.getLong("id");
-            Uri uri = Uri.parse(ProdottiContentProvider.PRODUTTORI_URI + "/" + mID);
-            Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+           // Uri uri = Uri.parse(PagamentiContentProvider.PRODUTTORI_URI + "/" + mID);
+            Cursor cursor = getContentResolver().query(null, null, null, null, null);
             cursor.moveToFirst();
             if (cursor != null) {
                 txt_importo.setText(cursor.getString(cursor.getColumnIndex(TransazioneHelper.IMPORTO)));
