@@ -26,13 +26,15 @@
                 android:gravity="center"
                 android:text="Inserisci l'importo della transazione" />
 
-            <TextView
-                android:id="@+id/textView_importo"
+            <EditText
+                android:id="@+id/editText_importo"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:text="importo" />
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Importo" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -65,12 +67,13 @@
             android:gravity="center"
             android:text="Descrizione transazione" />
 
-        <TextView
-            android:id="@+id/textView-descrizione"
+        <EditText
+            android:id="@+id/editText_descrizione"
             android:layout_width="match_parent"
-            android:layout_height="122dp"
-            android:gravity="center"
-            android:text="Inserisci qui la descrizine della transazione" />
+            android:layout_height="139dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Descrizione" />
 
         <Button
             android:id="@+id/button_salva"

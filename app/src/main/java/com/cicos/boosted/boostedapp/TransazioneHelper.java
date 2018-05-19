@@ -6,10 +6,10 @@ public class TransazioneHelper implements BaseColumns {
     public static final String TABLE_NAME="transazione";
     public final static String DESCRIZIONE="nomescarpe";
     public final static String IMPORTO="modello";
-    public final static String DATA="numero";
-    public final static String EFFETTUATODA="produttore";
-    public final static String PAGATO="produttore";
-    public final static String SALDATO="produttore";
+    public final static String DATA="dataPagamento";
+    public final static String EFFETTUATODA="effettuatoDA";
+    public final static String PAGATO="pagato";
+    public final static String SALDATO="saldato";
     public final static String CREATE_QUERY=
             " CREATE TABLE " + TABLE_NAME
                     + " ( " + _ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"

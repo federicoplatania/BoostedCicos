@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InsertActivity"></activity>
+
+        <provider
+            android:name=".PagamentiContentProvider"
+            android:authorities="com.cicos.boosted.boostedapp"
+            android:exported="false"/>
+        <activity android:name=".InsertActivity"
+            android:launchMode="singleInstance">
+
+
+        </activity>
     </application>
 </manifest>

@@ -35,7 +35,7 @@ public class TransazioniCursorAdapter extends CursorAdapter {
         //viewHolder.txt_id_transazione.setText(""+cursor.getLong(cursor.getColumnIndex(ProduttoriHelper._ID)));
         viewHolder.txt_descrizione.setText(cursor.getString(cursor.getColumnIndex(TransazioneHelper.DESCRIZIONE)));
         viewHolder.txt_data.setText(cursor.getString(cursor.getColumnIndex(TransazioneHelper.DATA)));
-        viewHolder.txt_importo.setText(cursor.getString(cursor.getColumnIndex(TransazioneHelper.IMPORTO)));
+        viewHolder.txt_importo.setText(cursor.getInt(cursor.getColumnIndex(TransazioneHelper.IMPORTO)));
 
     }
 }
