@@ -13,6 +13,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class InsertActivity extends AppCompatActivity {
     long mID = -1;
     Button vBtnAdd;
@@ -29,6 +33,11 @@ public class InsertActivity extends AppCompatActivity {
         txt_descrizionebella =findViewById(R.id.editText_descrizione);
         txt_data = findViewById(R.id.editText_data);
 
+        Date c = Calendar.getInstance().getTime();
+
+        SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+        String formattedDate = df.format(c);
+        txt_data.setText(formattedDate);
         Bundle bundle = mIntent.getExtras();
 
         if (bundle != null) {

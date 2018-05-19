@@ -32,8 +32,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Importo" />
+                android:hint="importo"
+                android:inputType="textPersonName" />
 
         </LinearLayout>
 
@@ -72,8 +72,8 @@
             android:layout_width="match_parent"
             android:layout_height="139dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Descrizione" />
+            android:hint="descrizione"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/button_salva"
