@@ -1,6 +1,5 @@
 package com.cicos.boosted.boostedapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(getApplicationContext(),DetailActivity.class);
+                Intent i = new Intent(getApplicationContext(),InsertActivity.class);
                 startActivity(i);
 
             }
