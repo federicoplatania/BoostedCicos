@@ -18,7 +18,7 @@ public class TransazioniCursorAdapter extends CursorAdapter {
     }
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
-        View view = LayoutInflater.from(context).inflate(R.layout.celltransazione,null);
+        View view = LayoutInflater.from(context).inflate(R.layout.celltransazione,parent,false);
         ViewHolder vHolder=new ViewHolder();
         //vHolder.txt_id_transazione=(TextView)view.findViewById(R.id.textview_id_produttore);
         vHolder.txt_descrizione=(TextView)view.findViewById(R.id.textView_descrizione);

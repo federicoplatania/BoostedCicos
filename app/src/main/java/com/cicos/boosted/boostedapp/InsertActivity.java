@@ -28,7 +28,7 @@ public class InsertActivity extends AppCompatActivity {
         Intent mIntent = getIntent();
         final EditText txt_data,txt_importo, txt_descrizionebella;;
 
-        vBtnAdd =findViewById(R.id.button_salva);
+        vBtnAdd =(Button)findViewById(R.id.button_salva);
         txt_importo = findViewById(R.id.editText_importo);
         txt_descrizionebella =findViewById(R.id.editText_descrizione);
         txt_data = findViewById(R.id.editText_data);
